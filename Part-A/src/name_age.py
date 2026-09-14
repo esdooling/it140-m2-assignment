@@ -27,23 +27,12 @@ CURRENT_YEAR = date.today().year  # Get current year from system as integer
 # === Main Function ===
 def main() -> None:
     """Run the name-age program."""
+    name = input("What is your name? ")
+    age = int(input("How old are you? "))
 
-    # Get user input.
-    # TODO: Replace with code to get user's name as a string. See zyBooks 1.3.
-    # TODO: Replace with code to get user's age as an integer. See zyBooks 2.6.
-
-    # Calculate user's approximate birth year.
-    # TODO: Replace with code to process data. See zyBooks 1.16 & 1.17.
-
-    # Output personalized message with user's name and birth year.
-    # TODO: Replace with code to output formatted results. zyBooks 1.3 & 2.7.
-
+    BIRTH_YEAR = CURRENT_YEAR - age
+    print(f"Hello {name}! You were born in {BIRTH_YEAR}.")
 
 # === Main Guard ===
 if __name__ == "__main__":
     main()
-
-
-# === References ===
-# TODO: Replace with an APA-style reference for a source you used, or delete.
-# TODO: Replace with another APA-style reference, or delete this TODO line.
